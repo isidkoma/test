@@ -6,7 +6,7 @@ import { Pie, Bar } from 'react-chartjs-2';
 import Chart from 'chart.js/auto';
 import 'chartjs-plugin-datalabels';
 
-const BACKEND_URL = "http://164.92.96.20:3031";
+const BACKEND_URL = "https://164.92.96.20:3031";
 
 function Dashboard() {
   const [budgetData, setBudgetData] = useState([]);
