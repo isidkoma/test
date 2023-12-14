@@ -1,5 +1,3 @@
-<script type="module" src="signup.js"></script>
-
 import React, { Component } from 'react';
 
 class SignUp extends Component {
