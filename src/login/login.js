@@ -85,7 +85,7 @@ export default Login;
 
 async function loginUser(credentials) {
   try {
-    const response = await fetch('https://164.92.96.20:3031/login', {
+    const response = await fetch('http://164.92.96.20:3031/login', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
