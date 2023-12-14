@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { reactLocalStorage } from 'reactjs-localstorage';
 import { Pie, Bar } from 'react-chartjs-2';
+ // eslint-disable-next-line
 import Chart from 'chart.js/auto';
 import 'chartjs-plugin-datalabels';
 
@@ -23,6 +24,7 @@ function Dashboard() {
     } else {
       handleError('Token not available.');
     }
+     // eslint-disable-next-line
   }, []);
 
   const [pieChartData, setPieChartData] = useState({
@@ -44,6 +46,7 @@ function Dashboard() {
     setPieChartData(createPieChart());
     setDonutChartData(createDonutChart());
     setBarChartData(createBarChart());
+     // eslint-disable-next-line
   }, [budgetData]);
 
   const getBudget = async (token) => {
