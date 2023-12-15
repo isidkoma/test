@@ -31,7 +31,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build":"cross-env DISABLE_ESLINT_PLUGIN=true ESLINT_NO_DEV_ERRORS=true react-scripts build",
+    "build": "cross-env DISABLE_ESLINT_PLUGIN=true ESLINT_NO_DEV_ERRORS=true react-scripts build",
     "test": "mocha 'test/**/*.js'",
     "eject": "react-scripts eject"
   },
@@ -40,6 +40,10 @@
       "react-app",
       "react-app/jest"
     ]
+  },
+  "babel": {
+    "presets": ["@babel/preset-env", "@babel/preset-react"],
+    "plugins": ["@babel/plugin-proposal-private-property-in-object"]
   },
   "browserslist": [
     ">0.2%",
